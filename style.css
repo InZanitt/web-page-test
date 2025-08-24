@@ -149,19 +149,38 @@
       .btn-home a {
         margin: 0px 20px;      
      }     
-     /* Para pantallas más pequeñas que 768px (tablets y móviles) */
+/* Tablets y móviles grandes */
 @media (max-width: 768px) {
+    .navbar a {
+        padding: 10px 20px; 
+        font-size: 25px;    
+    }
     .imagen {
-        top: 12%; /* un poco más abajo si el navbar se hace más alto en móviles */
+        top: 12%; 
     }
 }
 
-/* Para móviles muy pequeños */
+/* Móviles pequeños */
 @media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; 
+    }
+    .navbar a {
+        padding: 8px 15px;
+        font-size: 20px;
+    }
     .imagen {
-        top: 15%; /* ajusta según sea necesario */
+        top: 15%;
+    }
+    p {
+        padding: 0 20px; 
+        font-size: 18px; 
+    }
+    .title {
+        font-size: 50px; 
     }
 }
+
      
      
      
